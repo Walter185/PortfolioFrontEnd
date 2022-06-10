@@ -1,0 +1,27 @@
+<div class="container" *ngIf="currentUser; else loggedOut">
+    <header class="jumbotron" id="profile">
+      
+        <br><br><br><br>
+      <h3 mat-card-title>Nombre de Usuario:   <strong><u>{{ currentUser.username }}</u></strong></h3>
+    </header>
+      <div class="form" id="profile2">
+    <p>
+      <strong>Token:</strong>
+      {{ currentUser.accessToken}} 
+    </p>
+    <p>
+      <strong>Email:  </strong>
+      {{ currentUser.email }}
+    </p>
+    <strong>Roles:  </strong>
+    <ul>
+      <li *ngFor="let role of currentUser.roles">
+        <p>{{ role }}</p>
+      </li>
+    </ul></div>
+  </div>
+  
+  <ng-template #loggedOut>
+    Please login.
+  </ng-template>
+  

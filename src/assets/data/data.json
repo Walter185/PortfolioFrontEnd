@@ -1,0 +1,143 @@
+{
+    "name": "Walter R Liendo",
+    "bannerImage": "../../assets/img/hero1.jpg",
+    "profilePicture": "../../assets/img/walter.png",
+    "ocupation": "Full-Stack Web Developer Jr.",
+    "location": "Ciudad Autónoma de Buenos Aires, Argentina",
+    "institution": "INSPT",
+    "url":"http://inspt.utn.edu.ar",
+    "institutionImage": "https://argentinalegal.net/wp-content/uploads/2020/05/Que-es-utn.png",
+    "about": "wwwSoy una persona emprendedora, proactiva y con mucha experiencia en el rubro hotelero encargándome del manejo y resolución de problemas. He trabajado en hoteles de lujo en Argentina y Estados Unidos. Mi meta es poder crear, usando mis conocimientos, herramientas que simplifiquen las tareas de los diferentes sectores de empresas o Pymes que interactúan con el público en general. Ayudando de esta forma a completar los requerimientos solicitados en menor tiempo, ahorrando energía y recursos. Garantizando así la satisfacción del cliente, y manteniendo el nivel de atención por encima de lo esperado.",
+
+    "education": [
+        {
+            "degree": "Técnico en Administración Hotelera",
+            "school": "École pour L´hotellerie “La Suisse” - CEPEC",
+            "img":"https://th.bing.com/th/id/R.6a713e581bd5dfe9d4d0fe60f4abbcb1?rik=hpNo3nppst6iHg&riu=http%3a%2f%2f2.bp.blogspot.com%2f_YwfABozpDQE%2fTIYrlTOkf3I%2fAAAAAAAAAzs%2fAsVH4mgsMdY%2fs320%2flogo_cepec_4col.gif&ehk=sHqJ8mxTJP%2bLLQ1%2bBFUG5Yzb9x8%2fD95mrNrOl%2bsPHGs%3d&risl=&pid=ImgRaw&r=0",
+            "start": "Marzo 2006",
+            "end":"Diciembre 2007",
+            "otherInformation": "Programas aprendidos WINPAX - PAX - FIDELIO - OPERA"
+        },
+        {
+            "degree": "Técnico en Informática Aplicada",
+            "school": "Instituto Nacional Superior del Profesorado Técnico - UTN",
+            "img":"https://scontent.fmvd1-1.fna.fbcdn.net/v/t1.6435-9/41626363_2116685625259014_7368658317805092864_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEdR-nFeEkxqmpT4C-nmBEZPMEcaZcBUTE8wRxplwFRMXSMjZVmt5dmE6E74K3qb0bKJZp9F_yyGZDGeqKndwIf&_nc_ohc=QmM23T0mPMIAX-ubt9S&_nc_ht=scontent.fmvd1-1.fna&oh=00_AT8kCgiPYE-7ZvOcKjyr4bXscKSP1IZS9cLQaEJgZMRXyw&oe=628C859A",
+            "start": "Marzo 1996",
+            "end": "Diciembre 1997",
+            "otherInformation": "Lenguajes aprendidos PASCAL - COBOL - C++"
+        },
+        {
+            "degree": "Título Comercial con Orientación en Economía y Administración",
+            "school": "Liceo Nº 4 Remedios de Escalada de San Martin",
+            "img":"data:image/png;base64,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",
+            "start": "Marzo 1990",
+            "end": "Diciembre 1994",
+            "otherInformation": "Herramientas MICROSOFT- Sede de “Hackatón: Desafíos científicos” "
+        }    
+       
+    ],
+    "experience": [
+        {
+            "position": "Front Desk Concierge",
+            "company": "Alvear Icon Hotel Puerto Madero", 
+            "img":"https://scontent.fmvd1-1.fna.fbcdn.net/v/t1.6435-9/68521337_2385257338223689_2870789173239873536_n.png?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeENNZRiL-4Q8QL0NEJLlFptQMfaZQgwJsRAx9plCDAmxA9n41rZjFoRVGz2Q4zxMpTVcrdaluycmueVr63QPp1h&_nc_ohc=lxhFsqvdHmAAX-OOW43&_nc_ht=scontent.fmvd1-1.fna&oh=00_AT9WiDZSrkVRhE7oRG0JEZ6Zn8wzUIhnQOA_vG6muePuDQ&oe=628AD5BC"   ,
+            "mode": "Jornada Completa",                                                     
+            "start": "Mayo 2017",
+            "end":"Marzo 2020",
+            "detail": "Paticipe en la inauguración del Hotel. Software utilizado OPERA"
+        },
+        {
+            "position": "Front Desk Concierge",
+            "company": "Marriott Plaza Hotel Buenos Aires",  
+            "img":"https://www.bodatienda.com/uploads/images/Marcas/Noche%20de%20bodas/Logo%20Plaza%202013%20curvas-01_467x358.jpg"   ,
+            "mode": "Jornada Completa",                                                    
+            "start": "Enero 2011",
+            "end":"Abril 2017",
+            "detail": "Cierre de Hotel por cambio de firma, es comprado por Grupo Alvear. Software utilizado OPERA"
+        },
+        {
+            "position": "Programa de Supervisión de Recepción",
+            "company": "JW Marriott Orlando Grandes Lakes, Orlando, FL USA",  
+            "bgi":"https://th.bing.com/th/id/R.433a4e5d45befc3813ca4b9e440cc88d?rik=HxeEQoD%2bL3R08Q&riu=http%3a%2f%2fwww.cfmedia.vfmleonardo.com%2fimageRepo%2f6%2f0%2f96%2f627%2f606%2fmcojw-exterior-0097-hor-clsc_S.jpg&ehk=qXtWEbALzEm%2fnnpoTdb27xYfDYdQ1wj%2f7rfpiE6%2b7MA%3d&risl=&pid=ImgRaw&r=0",
+                "img":"https://th.bing.com/th/id/R.d37e68ecdeca6a0f818672f6b43ada47?rik=vBXWkNu29J9k6A&riu=http%3a%2f%2fpontorlando.com%2fwp-content%2fuploads%2f2016%2f05%2flogo_marriott-jw_01.gif&ehk=hdcYjNYHZLo3usQ7JVXSbbpv7mIy6AfElFmcjMNSBQw%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"   ,
+            "mode": "Jornada Completa",                                                 
+            "start": "Enero 2008",
+            "end": "Enero 2009",
+            "detail": "VISA J1. Software utilizado MARSHA"
+        }
+   
+    ],
+    "hardskills": [
+        {
+            "name": "HTML",
+            "level": 90
+        },
+        {
+            "name": "CSS",
+            "level": 90
+        },
+        {
+            "name": "Java",
+            "level": 80
+        },
+        {
+            "name": "Manejo de Idiomas",
+            "level": 100
+        },
+        {
+            "name": "Angular",
+            "level": 85
+        },
+        {
+            "name": "Github",
+            "level": 90
+        }
+    ],
+    "softskills":  [
+        {
+            "name": "Pensamiento Crítico",
+            "level": 95
+        },
+        {
+            "name": "Compromiso",
+            "level": 100
+        },
+        {
+            "name": "Trabajo en equipo",
+            "level": 100
+        },
+        {
+            "name": "Empatía",
+            "level": 95
+        },
+        {
+            "name": "Actitud positiva frente a Objetivos y desafíos",
+            "level": 98
+        },
+        {
+            "name":"Resolucion de problemas",
+            "level": 95
+        }
+    ],
+
+    "projects": [
+        {
+            "name": "Proyecto Mainero - Maquinarias Agricolas (En proceso de contrucción)",
+            "description": "La línea más completa de equipos para la cosecha, reserva y distribución de forrajes de América Latina con repuestos legítimos y servicio Post-venta. Seguimiento de Stock / inventario / Clientes y Facturación.",
+            "linkSourceCode": "blank",
+            "projectImage": "../../assets/img/mainero.png"
+        },
+        {
+            "name": "Proyecto Integrador: Portfolio Argentina Programa #YoProgramo ",
+            "description": "Proyecto Integrador realizado para la segunda etapa del Argentina Programa: #YoProgramo",
+            "linkSourceCode": "https://github.com/Walter185/Portfolio_WalterLiendo",
+            "projectImage": "https://www.alvearicon.com/resources/img/hero1.jpg"
+        },
+        {
+            "name": "Proyecto AYS - At Your Service (En proceso de contrucción)",
+            "description": "AYS es un programa confeccionado con el fin de cumplir con los standares de servicio de un Hotel de lujo. Con AYS se puede llevar un registro exacto de pedidos realizados por el huesped, pudiendo hacerle seguimiento a los pedidos, y corroborando el cumplimiento de los mismos. Usted puede llevar un historial de servicios consumidos, hacer estadisticas, y controlar stock de los amenities consumidos.",
+            "linkSourceCode": "blank",
+            "projectImage": "https://cdn.euroinnova.edu.es/img/subidasEditor/atenci%C3%B3n%20telef%C3%B3nica%20que%20es-1604573111.webp"
+        }
+    ]
+}

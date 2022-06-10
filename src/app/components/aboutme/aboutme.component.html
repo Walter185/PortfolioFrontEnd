@@ -1,0 +1,76 @@
+<section class="mat-card card aboutme mx-auto" main-container id="aboutme">
+    <div class="title-button">
+      <h2 class="content-title"> Acerca de mi</h2>
+      <div class="d-block" *ngIf="showAdminBoard">
+         <i style="padding-right: 3px;" (click)="onOpenModal('edit',aboutme)"
+        class="fa-solid fa-edit" data-toggle="modal"  data-target="#editAboutmeModal"
+         ></i>
+      </div>
+      </div>
+    <div class="title-button">
+    </div>
+    <div>{{aboutme.introduccion}}
+    </div>
+  
+  <!-- Modal -->
+  <div 
+  class="modal fade" 
+  id="editAboutmeModal" 
+  tabindex="-1" 
+  aria-labelledby="aboutmeEditModalLabel" 
+  aria-hidden="true"
+  role="dialog" 
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="updateAboutmeModalLabel">
+            Editar informacion</h5>
+        <button 
+          type="button"
+          class="close" 
+          data-dismiss="modal" 
+          aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+       <div class="modal-body">
+          <form #editForm="ngForm">
+                <div class="form-group">
+                       <label for="introduccion"class="form-label">Acerca de mi</label>
+                      <textarea  
+                        class="form-control"
+                        type="text"
+                        ngModel="{{editAboutme?.introduccion}}" 
+                        name="introduccion"
+                        id="introduccion"
+                        rows="10"> </textarea>
+                  </div>
+                  <input
+                  type="hidden"
+                  ngModel="{{editAboutme?.idIntroduccion}}"
+                  name="idIntroduccion"
+                  class="form-control"
+                  id="idIntroduccion"
+                  placeholder=""
+                  />
+                <br>
+              <div class="modal-footer">
+                  <button 
+                  type="button" 
+                  class="btn btn-secondary"
+                  data-dismiss="modal">
+                      Cancelar</button>
+                  <button 
+                  (click)="onUpdateAboutme(editForm.value)" 
+                  data-dismiss="modal"
+                  class="btn btn-primary">
+                      Guardar cambios
+                  </button>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
