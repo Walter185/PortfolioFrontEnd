@@ -99,6 +99,7 @@ body {
 .items-list img {
   width: 100px;
 }
+
 #profile{
   background-color: rgb(128, 128, 128);
   text-align: center;
@@ -132,21 +133,24 @@ body {
   margin-top: 10px;
 }
 
- 
-#login{
-  width: 300%;
-  position: fixed !important;
-  text-align: left;
-  align-items: center;
-  margin: center;
-}
+
 #register{
-  width: 150%;
-  position: fixed !important;
+  width: 90%;
+  position: fixed;
   text-align: left;
-  margin: center;
-  margin-left: -180px;
-  margin-top: 10px;
+  margin-top: 50px;
+  margin-left: 0.5em;
+  display: flex;
+}
+
+#login {
+  width: 90%;  
+  position: fixed;
+  text-align: left;
+  margin-left: 0.5em;
+  margin-top: 50px;
+  display: flex;
+    
 }
 
 .barcontainer {
@@ -173,6 +177,7 @@ img {
 }
 .navbar {
   width: 70%;
+  position: fixed !important;
   background-color: rgb(27, 27, 27);
   opacity: 95%;
   font-style: white;
@@ -386,11 +391,13 @@ img {
   display: flex;
 
 }
+
 #hardskill {
   padding: 2.5rem;
   margin: 30px;
   display: flex;
 }
+
 .skills .content {
   position: relative;
   width: 100%;
@@ -408,6 +415,7 @@ img {
   position: relative;
   width: 46%;
 }
+
 #soft, #hard {
   display: inline-flex;
 }
@@ -429,8 +437,6 @@ img {
   height: 400px;
   position: relative;
   direction: ltr;
-
-
 }
 
 #main-slideshow #main-slideshow-content {
@@ -489,15 +495,6 @@ rsContainer {
 
 }
 
-#login {
-  width: 70%;
-  display: flex;
-  margin-left: 70px;
-  margin-top: 30px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
 
 .project .content .card .card-img img:hover {
   transform: scale(1.2);
@@ -591,9 +588,7 @@ rsContainer {
    align-items: center;
    
   }
-
 }
-
 
 @media (max-width: 980px) {
   #info-details {
@@ -684,7 +679,7 @@ rsContainer {
   .skills .content .col-right {
     margin-top: 40px;
   }
-}
+
 
 /*html, body { height: 100%; }*/
 
@@ -718,4 +713,4 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-}
+}}

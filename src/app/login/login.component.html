@@ -1,5 +1,7 @@
 <div class="col-md-12" id="login">
     <div class="card card-container">
+      <h1><u>Bienvenidos al Proyecto Integrador de Walter Liendo</u></h1>
+      <h3>(Ingrese su Username y contraseña, en caso de no tenerla por favor registrarse)</h3>
       <img id="profile-img" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" class="profile-img-card" />
       <form *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
         <div class="form-group">
@@ -22,9 +24,7 @@
           </div>
         </div>
         <div class="form-group" id="botones">
-          <div><button class="btn btn-primary btn-block" id="btnlog">Login</button></div><br><br>
-            Si aun no tiene =><a _ngcontent-ghh-c87="" href="/register" routerlink="register" class="nav-link" 
-            ng-reflect-router-link="register" id="btnreg2">Registrarse</a>
+          <div><button class="btn btn-primary btn-block" id="btnlog">Login</button></div>
         </div>
         <div class="form-group">
           <div class="alert alert-danger" role="alert" *ngIf="f.submitted && isLoginFailed">
