@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  private apiServeUrl='https://app-liendo.herokuapp.com';
+  private apiServeUrl='https://dbliendo.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 

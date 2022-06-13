@@ -6,7 +6,7 @@ import { Hardskill } from '../model/hardskill.model';
   providedIn: 'root'
 })
 export class HardskillService {
-  private apiServeUrl='https://app-liendo.herokuapp.com';
+  private apiServeUrl='https://dbliendo.herokuapp.com';
 
   constructor(private http:HttpClient) { }
 

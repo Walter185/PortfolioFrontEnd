@@ -13,7 +13,7 @@ const httpOptions = {
 })
 export class AuthService {
 
-  private apiServeUrl='https://app-liendo.herokuapp.com';
+  private apiServeUrl='https://dbliendo.herokuapp.com';
   public redirectUrl: string;
   router: any;
   loggedIn$ = new BehaviorSubject(false);

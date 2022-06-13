@@ -8,12 +8,9 @@ import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
-import { SoftskillComponent } from './components/softskill/softskill.component';
+import { SkillComponent } from './components/skill/skill.component';
 import { ProjectComponent } from './components/project/project.component';
-import { HeadComponent } from './components/head/head.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HardskillComponent } from './components/hardskill/hardskill.component';
-import { GuardGuard } from './_services/guard.guard';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -21,8 +18,7 @@ const routes: Routes = [
   { path: 'experience', component: ExperienceComponent },
   { path: 'education', component: EducationComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'SoftSkills', component: SoftskillComponent },
-  { path: 'HardSkills', component: HardskillComponent },
+  { path: 'Skills', component: SkillComponent },
   { path: 'proyectos', component: ProjectComponent, },
   { path: 'profile', component: ProfileComponent, },
   { path: 'user', component: BoardUserComponent,},

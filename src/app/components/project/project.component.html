@@ -4,7 +4,7 @@
       <i class="fa-solid fa-plus" data-toggle="modal"  
       (click)="onOpenModal('add')" data-target="#addProjectModal" *ngIf="showAdminBoard"></i>
     </div>
-    <div class="content">
+    <div class="content" id="pro">
       <li *ngFor="let project of projects">
         <mat-card class="example-card">
           <div style="padding: 3px;" class="title-button">

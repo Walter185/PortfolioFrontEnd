@@ -26,11 +26,9 @@ import { MatProgressBarLocation } from '@angular/material/progress-bar';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SoftskillComponent } from './components/softskill/softskill.component';
-import { HardskillComponent } from './components/hardskill/hardskill.component';
+import { SkillComponent } from './components/skill/skill.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { AuthService } from './_services/auth.service';
-import { GuardGuard } from './_services/guard.guard';
 
 @NgModule({
   declarations: [
@@ -46,8 +44,7 @@ import { GuardGuard } from './_services/guard.guard';
     ProjectComponent,
     ExperienceComponent,
     EducationComponent,
-    SoftskillComponent,
-    HardskillComponent,
+    SkillComponent,
 
 
   ],
@@ -68,7 +65,7 @@ import { GuardGuard } from './_services/guard.guard';
     NgCircleProgressModule.forRoot({})
   ],
 
-  providers: [authInterceptorProviders,AuthService, GuardGuard],
+  providers: [authInterceptorProviders,AuthService],
   bootstrap: [AppComponent]
 })
 

@@ -8,7 +8,7 @@ import { Aboutme } from '../model/aboutme.model';
   providedIn: 'root'
 })
 export class AboutmeService {
-  private apiServeUrl='https://app-liendo.herokuapp.com';
+  private apiServeUrl='https://dbliendo.herokuapp.com';
   
   constructor(private http:HttpClient) { }
 

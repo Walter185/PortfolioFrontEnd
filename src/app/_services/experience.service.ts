@@ -7,7 +7,7 @@ import { Experience } from '../model/experience.model';
   providedIn: 'root'
 })
 export class ExperienceService {
-  private apiServeUrl='https://app-liendo.herokuapp.com';
+  private apiServeUrl='https://dbliendo.herokuapp.com';
 
   constructor(private http:HttpClient) { }
 
