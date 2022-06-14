@@ -100,6 +100,7 @@ body {
   align-items: center ;
 }
 
+
 #profile{
   background-color: dimgray;
   text-align: left;
@@ -385,23 +386,18 @@ img {
 
 #softskill , #hardskill {
   padding: 3rem;
-   display: flex;
-  flex-direction: row;
-  position:relative;
   margin: 20px;
+
 }
 
-#hard, #soft{
-  display: inline-block;
-}
 
-#hard{
-  width: 40%;
-}
-#soft{
-  width: 40%;
-}
 
+#hard ,#soft{
+
+  display: flex;
+  grid-row: auto;
+  align-items: center;
+}
 /*=============== Proyects =========== */
 .example-card {
   max-width: 300px;
@@ -656,27 +652,9 @@ body {
   height: 100%;
 }
 
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-html,
-body {
-  height: 100%;
-}
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
 
-html,
-body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }}

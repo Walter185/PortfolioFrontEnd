@@ -3,10 +3,10 @@
   <div class="title-button" id="soft">
     <h2 class="content-title">SoftSkills</h2>
       <i class="fa-solid fa-plus" 
-      (click)="onOpenModal('add')" data-bs-toggle="modal" 
-      data-bs-target="#addSoftskillModal" *ngIf="showAdminBoard"></i>
+      (click)="onOpenModal('add')" data-toggle="modal" 
+      data-target="#addSoftskillModal" *ngIf="showAdminBoard" ></i>
   </div><br>
-  <div class="col-sm-6 col-md-6 col-lg-6" id="main-container">
+  <div class="row">
     <ul class="items-list">
                 <li *ngFor="let softskill of softskills">
                     <div class="data-container">
@@ -33,13 +33,13 @@
                             <a 
                             style="padding-right: 5px;" 
                             (click)="onOpenModal('edit',softskill)">
-                            <i class="fa-solid fa-edit" data-bs-toggle="modal"
-                            data-bs-target="#editSoftskillModal" *ngIf="showAdminBoard"></i></a>
+                            <i class="fa-solid fa-edit" data-toggle="modal"
+                            data-target="#editSoftskillModal" *ngIf="showAdminBoard"></i></a>
                             <a 
                             style="padding-right: 5px;" 
                             (click)="onOpenModal('delete',softskill)">
-                            <i class="fa-solid fa-trash" data-bs-toggle="modal"
-                           data-bs-target="#deleteSoftskillModal"*ngIf="showAdminBoard"></i></a>
+                            <i class="fa-solid fa-trash" data-toggle="modal"
+                           data-target="#deleteSoftskillModal"*ngIf="showAdminBoard"></i></a>
                         </div>
                     </div>
               
@@ -49,10 +49,10 @@
   <div class="title-button" id="hard">
     <h2 class="content-title">HardSkills</h2>
       <i class="fa-solid fa-plus" 
-      (click)="onOpenModalHard('add')" data-bs-toggle="modal" 
-      data-bs-target="#addHardskillModal" *ngIf="showAdminBoard"></i>
+      (click)="onOpenModalHard('add')" data-toggle="modal" 
+      data-target="#addHardskillModal" *ngIf="showAdminBoard"></i>
   </div>   
-  <div class="col-sm-6 col-md-6 col-lg-6" id="main-container">
+  <div class="row">
     <ul class="items-list">
                 <li *ngFor="let hardskill of hardskills">
                     <div class="data-container">
@@ -80,14 +80,14 @@
                             style="padding-right: 5px;" 
                             (click)="onOpenModalHard('edit',hardskill)">
                             <i class="fa-solid fa-edit" 
-                            data-bs-toggle="modal"
-                            data-bs-target="#editHardskillModal" *ngIf="showAdminBoard"></i></a>
+                            data-toggle="modal"
+                            data-target="#editHardskillModal" *ngIf="showAdminBoard"></i></a>
                             <a 
                             style="padding-right: 5px;" 
                             (click)="onOpenModalHard('delete',hardskill)">
                             <i class="fa-solid fa-trash" 
-                            data-bs-toggle="modal"
-                            data-bs-target="#deleteHardskillModal" *ngIf="showAdminBoard"></i></a>
+                            data-toggle="modal"
+                            data-target="#deleteHardskillModal" *ngIf="showAdminBoard"></i></a>
                         </div>
                     </div>
               
