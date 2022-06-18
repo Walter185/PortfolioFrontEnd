@@ -1,31 +1,38 @@
-<section class="mat-card card aboutme mx-auto" main-container id="aboutme">
+<section class="mat-card card intro mx-auto" main-container id="intro">
     <div class="title-button">
-      <h2 class="content-title"> Acerca de mi</h2>
-      <div class="d-block" *ngIf="showAdminBoard">
-         <i style="padding-right: 3px;" (click)="onOpenModal('edit',aboutme)"
-        class="fa-solid fa-edit" data-toggle="modal"  data-target="#editAboutmeModal"
-         ></i>
-      </div>
-      </div>
-    <div class="title-button">
+      <div id="main-container">
+        <h2 class="content-title">Acerca de mi</h2>
     </div>
-    <div>{{aboutme.introduccion}}
+            <div class="d-block" *ngIf="showAdminBoard">
+               <h2 class="content-title"><span 
+              (click)="onOpenModal('edit',intro)"><i class="fa-solid fa-edit"
+              data-bs-toggle="tooltip"
+              data-bs-target="editIntroModal"
+              style="padding-right: 5px;" ></i></span> </h2>
+            </div>    
     </div>
-  
-  <!-- Modal -->
+   <div id="info" id="intro">
+      <div id="main-container"> 
+            <h3 data-bs-toggle="tooltip"
+            data-original-title="Edit">{{intro.introduccion}}</h3>
+          </div>
+  </div>
+ 
+<!----MODAL EDIT -->
+
   <div 
   class="modal fade" 
-  id="editAboutmeModal" 
+  id="editIntroModal" 
   tabindex="-1" 
-  aria-labelledby="aboutmeEditModalLabel" 
+  aria-labelledby="introEditModalLabel" 
   aria-hidden="true"
   role="dialog" 
   >
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="updateAboutmeModalLabel">
-            Editar informacion</h5>
+          <h5 class="modal-title" id="updateIntroModalLabel">
+            Editar informacion {{editIntro?.tituloIntro}}</h5>
         <button 
           type="button"
           class="close" 
@@ -38,17 +45,18 @@
           <form #editForm="ngForm">
                 <div class="form-group">
                        <label for="introduccion"class="form-label">Acerca de mi</label>
-                      <textarea  
+                      <textarea
                         class="form-control"
                         type="text"
-                        ngModel="{{editAboutme?.introduccion}}" 
+                        ngModel="{{editIntro?.introduccion}}" 
                         name="introduccion"
-                        id="introduccion"
-                        rows="10"> </textarea>
-                  </div>
+                        id="intrduccion"
+                        rows="10">
+                       </textarea>
+                        </div>
                   <input
                   type="hidden"
-                  ngModel="{{editAboutme?.idIntroduccion}}"
+                  ngModel="{{editIntro?.idIntroduccion}}"
                   name="idIntroduccion"
                   class="form-control"
                   id="idIntroduccion"
@@ -62,7 +70,7 @@
                   data-dismiss="modal">
                       Cancelar</button>
                   <button 
-                  (click)="onUpdateAboutme(editForm.value)" 
+                  (click)="onUpdateIntro(editForm.value)" 
                   data-dismiss="modal"
                   class="btn btn-primary">
                       Guardar cambios
@@ -73,4 +81,6 @@
     </div>
   </div>
   </div>
+
+  
 </section>

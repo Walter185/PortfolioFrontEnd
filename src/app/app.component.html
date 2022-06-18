@@ -5,7 +5,7 @@
           target="blanck" rel="noopener">
           <img src="https://liendo.s3.sa-east-1.amazonaws.com/APLogo.png" alt="Argentina Programa" id="logoAP"></a>
           <img src="https://liendo.s3.sa-east-1.amazonaws.com/LogosInti.png" alt="" id="logointi">
-        <a href="about" id="link1" class="nav-link" style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Acerca de mi</a>
+        <a href="intro" id="link1" class="nav-link" style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Acerca de mi</a>
         <a href="experience" id="link2"class="nav-link"style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Experiencia</a>
         <a href="education" id="link3"class="nav-link"style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Educacion</a>
         <a href="Skills" id="link4"class="nav-link"style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Habilidades</a>
@@ -40,6 +40,9 @@
     </ul>
     <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn" id="logout" >
       <li class="nav-item">
+        <a href="/user" class="nav-link" routerLink="user" style="color: rgb(171, 167, 167);">Home</a>
+        </li>
+      <li class="nav-item">
         <a href="/profile" class="nav-link" routerLink="profile"style="color: rgb(171, 167, 167);">{{ username }}</a>
       </li>
       <li class="nav-item">
@@ -48,6 +51,8 @@
     </ul>
       </nav>
    <div class="container">
-    <router-outlet></router-outlet>
+    <router-outlet>
+      
+    </router-outlet>
   </div>
 

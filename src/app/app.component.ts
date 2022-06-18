@@ -24,10 +24,10 @@ export class AppComponent implements OnInit {
 
       this.showAdminBoard = this.roles.includes('ROLE_ADMIN');
       this.showModeratorBoard = this.roles.includes('ROLE_MODERATOR');
-      this.ShowUserBoard = this.roles.includes('ROLE_USER');
+      //this.ShowUserBoard = this.roles.includes('ROLE_USER');
 
       this.username = user.username;
-    }
+    }  
   }
 
   logout(): void {

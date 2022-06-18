@@ -3,9 +3,7 @@ import { Softskill } from '../../model/softskill.model';
 import { NgForm } from '@angular/forms';
 import { HttpErrorResponse } from '@angular/common/http';
 import { SoftskillService } from '../../_services/softskill.service';
-import { HardskillService } from 'src/app/_services/hardskill.service';
 import { TokenStorageService } from 'src/app/_services/token-storage.service';
-import { Hardskill } from 'src/app/model/hardskill.model';
 
 @Component({
   selector: 'app-skill',
@@ -19,9 +17,6 @@ export class SkillComponent implements OnInit {
   public softskills:Softskill[]=[];
   public editSoftskill:Softskill | undefined;
   public deleteSoftskill:Softskill | undefined;
-  public hardskills:Hardskill[]=[];
-  public editHardskill:Hardskill | undefined;
-  public deleteHardskill:Hardskill | undefined;
   currentUser: any;
   private roles: string[];
   isLoggedIn = false;
@@ -29,11 +24,10 @@ export class SkillComponent implements OnInit {
   ShowUserBoard = false;
   username: string;
 
-  constructor(private softskillService: SoftskillService, private hardskillService: HardskillService, private tokenStorageService: TokenStorageService) { }
+  constructor(private softskillService: SoftskillService, private tokenStorageService: TokenStorageService) { }
 
   ngOnInit(): void {
     this.getSoftskills();
-    this.getHardskills();
     this.currentUser = this.tokenStorageService.getUser();
     this.isLoggedIn = !!this.tokenStorageService.getToken();
 
@@ -117,76 +111,4 @@ export class SkillComponent implements OnInit {
        }
     })
   }
-  
-  public getHardskills():void{
-    this.hardskillService.getHardskill().subscribe({
-      next:(Response:Hardskill[])=>{
-       this.hardskills=Response;
-      },
-    error:(error:HttpErrorResponse)=>{
-      alert(error.message);
-    }
-  })
-  }
-  public onOpenModalHard(mode:String, hardskill?:Hardskill):void{
-    const container=document.getElementById('main-container');
-    const button=document.createElement('button');
-    button.type='button';
-    button.style.display='none';
-    button.setAttribute('data-toggle','modal');
-    if(mode==='add'){
-      button.setAttribute('data-target','#addHardskillModal');
-    } else if(mode==='delete'){
-      this.deleteHardskill=hardskill;
-      button.setAttribute('data-target','#deleteHardskillModal');
-    } else if (mode==='edit'){
-      this.editHardskill=hardskill;
-      button.setAttribute('data-target','#editHardskillModal');
-    }
-    container?.appendChild(button);
-    button.click();
-    }
-
-    public onAddHardskill(addForm:NgForm):void{
-      document.getElementById('add-hardskill-form')?.click();
-      this.hardskillService.addHardskill(addForm.value).subscribe({
-        next:(response:Hardskill) =>{
-          console.log(response);
-          this.getHardskills();
-          addForm.reset();
-        },
-        error:(error:HttpErrorResponse)=>{
-          alert(error.message);
-          addForm.reset();
-        }
-      })
-    }
-  
-  public onUpdateHardskill(hardskill:Hardskill){
-    this.editHardskill=hardskill;
-    document.getElementById('add-hardskill-form')?.click();
-    this.hardskillService.updateHardskill(hardskill).subscribe({
-      next: ( response: Hardskill) =>{
-        console.log(response);
-        this.getHardskills();
-       },
-       error:(error:HttpErrorResponse)=>{
-         alert(error.message);
-       }
-    })
-  }
-
-  public onDeleteHardskill(idHardskill: number):void{
-    this.hardskillService.deleteHardskill(idHardskill).subscribe({
-      next: (response:void) =>{
-        console.log(response);
-        this.getHardskills();
-       },
-       error:(error:HttpErrorResponse)=>{
-         alert(error.message);
-       }
-    })
-  }
-
-
 }

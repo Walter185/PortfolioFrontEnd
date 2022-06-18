@@ -1,6 +1,10 @@
 <div class="col-md-12" id="login">
-    <div class="card card-container">
-      <h2><u>Proyecto de Walter Liendo</u></h2>
+    <div class="card card-container" style="
+    height: 900px; width: 1400px; border: 1px solid black; 
+    background-image: url(../../assets/images/banner.jpg); background-repeat: repeat-x;">
+      <h3><u>Bienvenidos a mi Portfolio</u></h3>
+      <h5><u>Walter R. Liendo</u>
+      </h5>
       <img id="profile-img" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" class="profile-img-card" />
       <form *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
         <div class="form-group">

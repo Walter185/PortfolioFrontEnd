@@ -5,7 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
-import { AboutmeComponent } from './components/aboutme/aboutme.component';
+import { IntroComponent } from './components/intro/intro.component';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { SkillComponent } from './components/skill/skill.component';
@@ -14,7 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'about',  component: AboutmeComponent },
+  { path: 'intro',  component: IntroComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'education', component: EducationComponent },
   { path: 'register', component: RegisterComponent },
