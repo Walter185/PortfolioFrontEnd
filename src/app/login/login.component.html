@@ -2,9 +2,8 @@
 height: 978px; width: 1469px; border: 1px solid black; 
 background-image: url(../../assets/images/banner.jpg); background-repeat: repeat-x;">
     <div class="card card-container"id="login2">
-      <h3><u>Bienvenidos a mi Portfolio</u></h3>
-      <h4><u>Walter R. Liendo</u>
-      </h4>
+      <h3><u><b>   Bienvenidos a mi Portfolio</b></u></h3>
+      <p></p>
       <img id="profile-img" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" class="profile-img-card" />
       <form *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
         <div class="form-group">
@@ -28,6 +27,7 @@ background-image: url(../../assets/images/banner.jpg); background-repeat: repeat
         </div>
         <div class="form-group" id="botones">
           <div><button class="btn btn-primary btn-block" id="btnlog">Login</button></div>
+          <br><br><p>walter.liendo@gmail.com @2022</p>
         </div>
         <div class="form-group">
           <div class="alert alert-danger" role="alert" *ngIf="f.submitted && isLoginFailed">

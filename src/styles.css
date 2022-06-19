@@ -105,19 +105,25 @@ body {
 
 
 #profile{
-  background-color: dimgray;
+  background-color: rgb(172, 169, 169);
   text-align: left;
-  display: inline-table;
+  display: flex;
   margin-top: 100px;
-  width: auto;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
     
 
 #profile2{
-  background-color: bisque;
+  background-color: rgb(255, 187, 104);
   text-align: left;
-  display: inline-table;
+  display: flexbox;
   margin-top: 100px;
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 0px;
+  text-align: left;
 }
 
 /* =============== NavBar =========== */

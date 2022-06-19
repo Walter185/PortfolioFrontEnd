@@ -27,6 +27,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { AuthService } from './_services/auth.service';
 import { IntroComponent } from './components/intro/intro.component';
 import { HardskillComponent } from './components/hardskill/hardskill.component';
+import { LogroComponent } from './components/logro/logro.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { HardskillComponent } from './components/hardskill/hardskill.component';
     SkillComponent,
     IntroComponent,
     HardskillComponent,
+    LogroComponent,
     
   ],
   imports: [

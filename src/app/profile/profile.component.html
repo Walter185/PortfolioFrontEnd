@@ -1,13 +1,14 @@
-<div class="container" *ngIf="currentUser; else loggedOut" id="profile">
-    <header class="jumbotron">
+<div class="row" *ngIf="currentUser; else loggedOut" id="profile">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       
         <br><br><br><br>
       <h3 mat-card-title>Nombre de Usuario:   <strong><u>{{ currentUser.username }}</u></strong></h3>
-    </header>
-      <div class="form" id="profile2">
+    </div>
+      <div class="row" id="profile2" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <p>
-      <strong>Token:</strong>
-      {{ currentUser.accessToken.substring(0,20)}}...{{currentUser.accessToken.substr(currentUser.accessToken.length - 20) }}
+      <strong>Token: </strong>{{currentUser.accessToken.substring(0,20)}}...
+      {{currentUser.accessToken.substr(currentUser.accessToken.length - 20) }}
+
     </p>
     <p>
       <strong>Email:  </strong>
