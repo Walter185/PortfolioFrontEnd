@@ -3,7 +3,6 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { TokenStorageService } from 'src/app/_services/token-storage.service';
 import { IntroService } from '../../_services/intro.service';
 import { Intro } from 'src/app/model/intro.model';
-import { NgForm } from '@angular/forms';
 
 
 @Component({
@@ -69,21 +68,6 @@ export class IntroComponent implements OnInit {
     button.click();
     }
 
-    public onAddIntro(addForm:NgForm):void{
-      document.getElementById('add-intro-form')?.click();
-      this.introService.addIntro(addForm.value).subscribe({
-        next:(response:Intro) =>{
-          console.log(response);
-          this.getIntros();
-          addForm.reset();
-        },
-        error:(error:HttpErrorResponse)=>{
-          alert(error.message);
-          addForm.reset();
-        }
-      })
-    }
-    
     public onUpdateIntro(intro:Intro){
       this.editIntro=intro;
       document.getElementById('add-intro-form')?.click();

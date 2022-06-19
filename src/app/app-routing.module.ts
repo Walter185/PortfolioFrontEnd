@@ -11,6 +11,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { SkillComponent } from './components/skill/skill.component';
 import { ProjectComponent } from './components/project/project.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HardskillComponent } from './components/hardskill/hardskill.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -19,13 +20,14 @@ const routes: Routes = [
   { path: 'education', component: EducationComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'Skills', component: SkillComponent },
+  { path: 'hard', component: HardskillComponent },
   { path: 'proyectos', component: ProjectComponent, },
   { path: 'profile', component: ProfileComponent, },
   { path: 'user', component: BoardUserComponent,},
   { path: 'info', component: FooterComponent },
   { path: 'mod', component: BoardUserComponent },
   { path: 'admin', component: BoardAdminComponent },
-  { path: '', redirectTo: 'login', pathMatch: 'full' }
+  { path: '', redirectTo: 'login', pathMatch: 'full'}
 ];
 
 @NgModule({

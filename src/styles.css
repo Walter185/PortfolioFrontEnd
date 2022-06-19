@@ -10,9 +10,11 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-
 }
 
+.carousel-inner{
+  display: flex;
+}
 section {
   border-radius: 2px;
   border-color: #000;
@@ -142,23 +144,20 @@ body {
 }
 
 
-#register{
-  width: 90%;
-  position: fixed;
-  text-align: left;
-  margin-top: 50px;
-  margin-left: 0.5em;
-  display: flex;
-}
 
-#login {
-  width: 90%;  
+#login , #register{
+  width: 100%;  
+  height: 100%;
   position: fixed;
   text-align: left;
-  margin-left: 0.5em;
-  margin-top: 30px;
-  display: flex;
+  margin-top: 25px;
+  margin-left: -50px;
     
+}
+#login2, register2{
+  width: 300px;
+  height: 600px;
+  display: flex;
 }
 
 .barcontainer {
@@ -458,6 +457,9 @@ img {
   #info-data {
     display: flex;
   }
+  #register2{
+    width: 250px;
+  }
 
 }
 
@@ -489,8 +491,15 @@ img {
   #logointi {
     display: none;
   }
+  #login2{
+    margin-left: 0px !important;
 
+  }
+  #register2{
+    margin-left: -10px !important;
+    width: 230px;
 
+  }
 }
 
 @media (max-width: 411px) {
@@ -508,12 +517,38 @@ img {
   }
   #menu , #menu2{
     display: flex;
-    width: auto;
-    margin-left: -90px !important;
+    width: 200px;
+    margin-left: -50px !important;
   }
+  #login2{
+    margin-left: 10px !important;
+    width: 300px;
+  }
+   #register2{
+    margin-left: -50px !important;
+    width: 250px;
+}}
 
+@media (max-width: 470px) {
+  #register2{
+    margin-left: 70px;
+    width: 250px;
+  }
 }
-
+@media (max-width: 570px) {
+  #login2{
+    margin-left: 70px !important;
+  }
+  #register2{
+    margin-left: 80px !important;
+}}
+@media (max-width: 625px) {
+  #login2{
+    margin-left: 70px !important;
+  }
+  #register2{
+    margin-left: 100px !important;
+}}
 @media (max-width: 790px) {
 
   #info-data {
@@ -526,7 +561,12 @@ img {
     margin-top: -5px;
     border-radius: 5%;
   }
-
+  #login2{
+    margin-left: 230px;
+  }
+ #register2{
+    margin-left: 220px;
+  }
 }
 
 @media (max-width: 980px) {
