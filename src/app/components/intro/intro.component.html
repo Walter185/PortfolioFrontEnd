@@ -1,24 +1,37 @@
-<section class="mat-card card intro mx-auto" main-container id="intro">
-    <div class="title-button">
-      <div id="main-container">
-        <h2 class="content-title">Acerca de mi</h2>
-    </div>
-            <div class="d-block" *ngIf="showAdminBoard">
-               <h2 class="content-title"><span 
-              (click)="onOpenModal('edit',intro)"><i class="fa-solid fa-edit"
-              data-bs-toggle="tooltip"
-              data-bs-target="editIntroModal"
-              style="padding-right: 5px;" ></i></span> </h2>
-            </div>    
-    </div>
-   <div id="info" id="intro">
-      <div id="main-container"> 
-            <h3 data-bs-toggle="tooltip"
-            data-original-title="Edit">{{intro.intro}}</h3>
-          </div>
+<section class="card mat-card mx-auto" main-container id="intro">
+  <div class="title-button">
+
   </div>
- 
+  <div class="title-button">
+  </div>
+  <br>
+  <div id="main-container">
+      <ul class="items-list">
+          <li *ngFor="let intro of intros">
+                <h2 class="content-title">{{intro.tituloIntro}}</h2>
+              <h3>{{intro.intro}}</h3> 
+                 <div class="data-container">
+                 <div class="title-button" id="intros">
+               
+                      <div class="d-block" *ngIf="showAdminBoard">
+                      <a style="padding-right: 5px;" 
+                      (click)="onOpenModal('edit',intro)"
+                      data-toggle="tooltip"
+                      data-original-title="Edit">
+                      <i class="fa-solid fa-edit" 
+                      data-toggle="modal"
+                      data-target="#editIntroModal"></i>
+                      </a>
+                    </div>
+                   </div> 
+              </div>
+          </li>
+      </ul>
+  </div>
+
+
 <!----MODAL EDIT -->
+
 
   <div 
   class="modal fade" 
@@ -44,24 +57,31 @@
        <div class="modal-body">
           <form #editForm="ngForm">
                 <div class="form-group">
-                       <label for="introduccion"class="form-label">Acerca de mi</label>
-                      <textarea
-                        class="form-control"
-                        type="text"
-                        ngModel="{{editIntro?.intro}}" 
-                        name="introduccion"
-                        id="intrduccion"
-                        rows="12">
-                       </textarea>
-                        </div>
-                  <input
+                       <label for="tituloIntro"class="form-label">Encabezado:</label>
+                       <input
+                       class="form-control"
+                       type="text"
+                       ngModel="{{editIntro?.tituloIntro}}" 
+                       name="tituloIntro"
+                       id="tituloIntro"
+                       />
+                      <input
                   type="hidden"
                   ngModel="{{editIntro?.idIntro}}"
-                  name="idIntroduccion"
+                  name="idIntro"
                   class="form-control"
-                  id="idIntroduccion"
+                  id="idIntro"
                   placeholder=""
                   />
+                  <textarea
+                  class="form-control"
+                  type="text"
+                  ngModel="{{editIntro?.intro}}" 
+                  name="intro"
+                  id="intro"
+                  rows="8">
+                 </textarea>
+                  </div>
                 <br>
               <div class="modal-footer">
                   <button 
@@ -81,6 +101,5 @@
     </div>
   </div>
   </div>
-
   
 </section>

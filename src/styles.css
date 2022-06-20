@@ -314,10 +314,16 @@ img {
 
 /* =============== About =========== */
 
-#intro {
-  padding: 3rem;
+#intro{
+  display: flex;
   text-align: center;
-
+  align-items: center;
+  padding: 2.5em;
+  
+}
+#intros{
+  margin: 20px;
+  line-break: anywhere;
 }
 
 
@@ -331,9 +337,12 @@ img {
   padding: 3rem;
   margin: 20px;
 }
+#logros{
+  background-color: #bebebe;
+}
 
 #imglogro{
-  width: 300px;
+  width: 100%;
   height: 200px;
   display: flex;
   float: left;

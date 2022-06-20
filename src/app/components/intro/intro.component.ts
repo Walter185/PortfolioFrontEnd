@@ -14,15 +14,13 @@ import { Intro } from 'src/app/model/intro.model';
 export class IntroComponent implements OnInit {
 
   
-  public intro:Intro;
+  public intros:Intro[]=[];
   public editIntro:Intro | undefined;
-  public deleteIntro:Intro | undefined;
   private roles: string[];
   currentUser: any;
   isLoggedIn = false;
   showAdminBoard = false;
   ShowUserBoard = false;
-  showModeratorBoard = false;
   username: string;
 
   constructor(private introService:IntroService, private tokenStorageService:TokenStorageService) { }
@@ -38,7 +36,6 @@ export class IntroComponent implements OnInit {
       this.roles = user.roles;
 
       this.showAdminBoard = this.roles.includes('ROLE_ADMIN');
-      this.showModeratorBoard = this.roles.includes('ROLE_MODERATOR');
       this.ShowUserBoard = this.roles.includes('ROLE_USER');
 
       this.username = user.username;
@@ -46,8 +43,8 @@ export class IntroComponent implements OnInit {
   }
   public getIntros():void{
     this.introService.getIntro().subscribe({
-      next:(Response:Intro)=>{
-     this.intro=Response;
+      next:(Response:Intro[])=>{
+     this.intros=Response;
       },
     error:(error:HttpErrorResponse)=>{
       alert(error.message);
@@ -68,7 +65,7 @@ export class IntroComponent implements OnInit {
     button.click();
     }
 
-    public onUpdateIntro(intro:Intro){
+     public onUpdateIntro(intro:Intro){
       this.editIntro=intro;
       document.getElementById('add-intro-form')?.click();
       this.introService.updateIntro(intro).subscribe({

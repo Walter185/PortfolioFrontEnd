@@ -5,11 +5,11 @@
         <i class="fa-solid fa-plus" data-toggle="modal" 
         (click)="onOpenModal('add')" data-target="#addLogroModal" *ngIf="showAdminBoard"></i>
     </div>
-    <div class="content" id="logros">
+    <div class="content">
     <li *ngFor="let logro of logros">
           <mat-card class="example-card">
             <div style="padding: 3px;" class="title-button">
-                <div class="d-block" *ngIf="showAdminBoard">
+                <div class="d-block" *ngIf="showAdminBoard" id="logros">
                     <h5 class="card-title">{{logro.nombreLogro}}</h5>
                     <img src="{{logro.imgLogro}}" alt="Logro Image" id="imglogro">
                         <span style="padding-right: 5px;" 
@@ -57,7 +57,7 @@ aria-hidden="true">
                 <form #addForm="ngForm" (ngSubmit)="onAddLogro(addForm)">
                     <div class="form-group">
                         <label for="nombreLogro">
-                           Ingrese url</label>
+                           Ingrese titulo de certificado</label>
                            <input 
                            class="form-control" 
                            ngModel
