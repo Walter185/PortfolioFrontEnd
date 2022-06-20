@@ -7,11 +7,11 @@
     </div>
     <div class="content">
     <li *ngFor="let logro of logros">
-          <mat-card class="example-card">
-            <div style="padding: 3px;" class="title-button">
-                <div class="d-block" *ngIf="showAdminBoard" id="logros">
-                    <h5 class="card-title">{{logro.nombreLogro}}</h5>
-                    <img src="{{logro.imgLogro}}" alt="Logro Image" id="imglogro">
+          <mat-card class="example-card" id="logros">
+            <div style="padding: 3px;" class="title-button" >
+                <h5 class="card-title">{{logro.nombreLogro}}</h5><br>
+                <img src="{{logro.imgLogro}}" alt="Logro Image" id="imglogro"></div>
+                <div class="d-block" *ngIf="showAdminBoard">
                         <span style="padding-right: 5px;" 
                         (click)="onOpenModal('edit',logro)"
                         data-toggle="tooltip"
@@ -26,7 +26,7 @@
                         data-original-title="Delete">
                         <i class="fa-solid fa-trash" data-toggle="modal"
                         data-target="#deleteLogroModal"></i></span>
-                    </div></div>
+                    </div>
                    </mat-card>
                 </li>
             </div>
