@@ -1,5 +1,5 @@
 export interface Intro {
-    idIntroduccion: number;
+    idIntro: number;
     tituloIntro: String;
-    introduccion: String;
+    intro: String;
 }

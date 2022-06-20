@@ -327,6 +327,17 @@ img {
   padding: 3rem;
   margin: 20px;
 }
+#logro{
+  padding: 3rem;
+  margin: 20px;
+}
+
+#imglogro{
+  width: 300px;
+  height: 200px;
+  display: flex;
+  float: left;
+}
 
 #education {
   padding: 3rem;

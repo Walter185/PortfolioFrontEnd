@@ -1,41 +1,36 @@
 <!--logros-->
-<section class="card mat-card mx-auto" main-container id="logro">
+<section class="card mat-card logro mx-auto" main-container id="logro">
     <div class="title-button">
         <h2 class="content-title">Certificaciones y logros</h2>
-        <i class="fa-solid fa-plus" data-bs-toggle="modal" 
-        (click)="onOpenModal('add')" data-bs-target="#addLogroModal" *ngIf="showAdminBoard"></i>
+        <i class="fa-solid fa-plus" data-toggle="modal" 
+        (click)="onOpenModal('add')" data-target="#addLogroModal" *ngIf="showAdminBoard"></i>
     </div>
-    <div class="title-button">
-    </div>
-    <div id="main-container">
-        <ul class="items-list">
-            <li *ngFor="let logro of logros">
-                <div class="data-container">
-                    <div class="logo-image">
-                        <img class="logo-image" src="{{logro.logro}}" />
-                        <div class="list-info">
-                        </div>
-                    </div>
-                    <div class="d-block" *ngIf="showAdminBoard">
-                        <a style="padding-right: 5px;" 
+    <div class="content" id="logros">
+    <li *ngFor="let logro of logros">
+          <mat-card class="example-card">
+            <div style="padding: 3px;" class="title-button">
+                <div class="d-block" *ngIf="showAdminBoard">
+                    <h5 class="card-title">{{logro.nombreLogro}}</h5>
+                    <img src="{{logro.imgLogro}}" alt="Logro Image" id="imglogro">
+                        <span style="padding-right: 5px;" 
                         (click)="onOpenModal('edit',logro)"
                         data-toggle="tooltip"
                         data-original-title="Edit">
                         <i class="fa-solid fa-edit" data-bs-toggle="modal"
                                 data-bs-target="#editLogroModal"></i>
-                        </a>
-                        <a 
+                        </span>
+                        <span 
                         style="padding-right: 5px;" 
                         (click)="onOpenModal('delete',logro)"
                         data-toggle="tooltip"
                         data-original-title="Delete">
-                        <i class="fa-solid fa-trash" data-bs-toggle="modal"
-                        data-bs-target="#deleteLogroModal"></i></a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
+                        <i class="fa-solid fa-trash" data-toggle="modal"
+                        data-target="#deleteLogroModal"></i></span>
+                    </div></div>
+                   </mat-card>
+                </li>
+            </div>
+   
 
 
 <!--  MODAL ADD-->
@@ -61,13 +56,26 @@ aria-hidden="true">
             <div class="modal-body">
                 <form #addForm="ngForm" (ngSubmit)="onAddLogro(addForm)">
                     <div class="form-group">
+                        <label for="nombreLogro">
+                           Ingrese url</label>
+                           <input 
+                           class="form-control" 
+                           ngModel
+                           id="nombreLogro"
+                           name="nombreLogro"
+                           type="text" 
+                           placeholder="Ingrese titulo de certificado"
+                           aria-label="Ingrese titulo de certificado"
+                           required />
+                       </div>
+                    <div class="form-group">
                      <label for="logro">
-                        Cargo</label>
+                        Ingrese url</label>
                         <input 
                         class="form-control" 
                         ngModel
-                        id="logro"
-                        name="logro"
+                        id="imgLogro"
+                        name="imgLogro"
                         type="text" 
                         placeholder="Ingrese url del certificado"
                         aria-label="Ingrese url del certificado"
@@ -109,7 +117,7 @@ aria-hidden="true"
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="updateLogroModalLabel">
-                    Modificar logro {{editLogro?.logro}}
+                    Modificar logro {{editLogro?.nombreLogro}}
                 </h5>
                 <button type="button" 
                 class="close" 
@@ -123,13 +131,13 @@ aria-hidden="true"
                     <div class="form-group">
                         <label for="logro"
                         class="form-label">
-                        Cargo</label>
+                        Logro</label>
                         <input 
                         class="form-control" 
                         type="text" 
-                        ngModel="{{editLogro?.logro}}" 
-                        name="logro"
-                        id="logro">
+                        ngModel="{{editLogro?.nombreLogro}}" 
+                        name="nombreLogro"
+                        id="nombreLogro">
                     </div>
                     <input
                     type="hidden"
@@ -139,6 +147,17 @@ aria-hidden="true"
                     id="idLogro"
                     placeholder=""
                     />
+                    <div class="form-group">
+                        <label for="imgLogro"
+                        class="form-label">
+                        Url del Logro</label>
+                        <input 
+                        class="form-control" 
+                        type="text" 
+                        ngModel="{{editLogro?.imgLogro}}" 
+                        name="imgLogro"
+                        id="imgLogro">
+                    </div>
                     <br>
                     <div class="modal-footer">
                         <button 
@@ -186,7 +205,7 @@ aria-hidden="true"
              </div>
             <div class="modal-body">
                 <p>¿Seguro que querés eliminar este elemento?
-                {{deleteLogro?.logro}}?</p>
+                {{deleteLogro?.nombreLogro}}?</p>
             </div>
             <div class="modal-footer">
                 <button 

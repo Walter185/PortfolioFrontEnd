@@ -1,4 +1,5 @@
 export interface Logro{
     idLogro:number;
-    logro:String;
+    nombreLogro:String;
+    imgLogro:String;
 }
