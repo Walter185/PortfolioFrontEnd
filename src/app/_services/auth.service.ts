@@ -23,6 +23,7 @@ export class AuthService {
       this.setLoggedIn(true);
     } else {
       this.setLoggedIn(false);
+      
     } 
    }
 

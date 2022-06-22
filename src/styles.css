@@ -190,7 +190,7 @@ img {
 }
 .navbar {
   width: 100%;
-  position: fixed;
+  position: fixed !important;
   background-color: rgb(27, 27, 27);
   opacity: 95%;
   font-style: white;

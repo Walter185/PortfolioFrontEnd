@@ -5,11 +5,11 @@
           target="blanck" rel="noopener">
           <img src="https://liendo.s3.sa-east-1.amazonaws.com/APLogo.png" alt="Argentina Programa" id="logoAP"></a>
           <img src="https://liendo.s3.sa-east-1.amazonaws.com/LogosInti.png" alt="" id="logointi">
-        <a href="intro" id="link1" class="nav-link" style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Acerca de mi</a>
+        <a href="intro" id="link1" class="nav-link" style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Acerca</a>
         <a href="experience" id="link2"class="nav-link"style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Experiencia</a>
         <a href="education" id="link3"class="nav-link"style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Educacion</a>
-        <a href="Skills" id="link4"class="nav-link"style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Softskills</a>
-        <a href="hard" id="link4"class="nav-link"style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Hardskills</a>
+        <a href="Skills" id="link4"class="nav-link"style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Softskill</a>
+        <a href="hard" id="link4"class="nav-link"style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Hardskill</a>
         <a href="logro" id="link4"class="nav-link"style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Logros</a>
         <a href="proyectos" id="link6"class="nav-link"style="font-size: 120%;" style="color: rgb(171, 167, 167);"*ngIf="isLoggedIn">Proyectos</a>
           </div>
@@ -28,14 +28,14 @@
         </div></div>
          </div>
       <ul class="navbar-nav mr-auto" routerLinkActive="active" id="menu2">
-      <li class="nav-item" *ngIf="ShowUserBoard">
+              <li class="nav-item" *ngIf="ShowUserBoard">
       <a href="/user" class="nav-link" routerLink="user" style="color: rgb(171, 167, 167);">Home</a>
       </li>
       </ul>
        <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn" id="menu">
       <li class="nav-item">
         <a href="/register" class="nav-link" routerLink="register" style="color: rgb(171, 167, 167)">Registrarse</a>
-      </li>
+        </li>
       <li class="nav-item">
         <a href="/login" class="nav-link" routerLink="login" style="color: rgb(171, 167, 167);">Login</a>
       </li>

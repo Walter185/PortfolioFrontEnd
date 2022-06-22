@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   isLoggedIn = false;
   showAdminBoard = false;
   ShowUserBoard = false;
+  ShowHome = false;
   showModeratorBoard = false;
   username: string;
 
