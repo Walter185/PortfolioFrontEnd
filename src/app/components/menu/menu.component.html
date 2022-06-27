@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand ">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container-fluid" id="barra">
       <div id="links">
         <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"
@@ -37,18 +37,20 @@
         <a href="/register" class="nav-link" routerLink="register" style="color: rgb(171, 167, 167)">Registrarse</a>
         </li>
       <li class="nav-item">
-        <a href="/login" class="nav-link" routerLink="login" style="color: rgb(171, 167, 167);">Login</a>
+        <a href="/login" class="nav-link" routerLink="login" style="color: rgb(171, 167, 167);"><i class="fas fa-sign-in-alt">
+        </i>Iniciar sesión</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn" id="logout" >
       <li class="nav-item">
-        <a href="/user" class="nav-link" routerLink="user" style="color: rgb(171, 167, 167);">Home</a>
+        <a href="/user" class="nav-link" routerLink="user" style="color: rgb(171, 167, 167);">Inicio</a>
         </li>
       <li class="nav-item">
         <a href="/profile" class="nav-link" routerLink="profile"style="color: rgb(171, 167, 167);">{{ username }}</a>
       </li>
       <li class="nav-item">
-        <a href class="nav-link" (click)="logout()" style="color: rgb(171, 167, 167);">LogOut</a>
+        <a href class="nav-link" (click)="logout()" style="color: rgb(171, 167, 167);"><i class="fas fa-door-open">
+        </i>LogOut</a>
       </li>
     </ul>
       </nav>

@@ -28,8 +28,8 @@ import { AuthService } from './_services/auth.service';
 import { IntroComponent } from './components/intro/intro.component';
 import { HardskillComponent } from './components/hardskill/hardskill.component';
 import { LogroComponent } from './components/logro/logro.component';
-import { HeaderComponent } from './components/header/header.component';
-import { HomeComponent } from './home/home.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -48,8 +48,8 @@ import { HomeComponent } from './home/home.component';
     IntroComponent,
     HardskillComponent,
     LogroComponent,
-    HeaderComponent,
-    HomeComponent,
+    MenuComponent,
+    IndexComponent,
     
   ],
   imports: [
