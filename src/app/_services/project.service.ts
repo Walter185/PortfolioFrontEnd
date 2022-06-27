@@ -7,7 +7,7 @@ import { Project } from '../model/project.model';
   providedIn: 'root'
 })
 export class ProjectService {
-  private apiServeUrl='https://dbliendo.herokuapp.com';
+  private apiServeUrl='http://localhost:8080';
   
   constructor(private http:HttpClient) { }
 

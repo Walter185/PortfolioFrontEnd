@@ -7,7 +7,7 @@ import { Softskill } from '../model/softskill.model';
   providedIn: 'root'
 })
 export class SoftskillService {
-  private apiServeUrl='https://dbliendo.herokuapp.com';
+  private apiServeUrl='http://localhost:8080';
 
   constructor(private http:HttpClient) { }
 

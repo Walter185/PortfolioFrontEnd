@@ -13,8 +13,10 @@ import { ProjectComponent } from './components/project/project.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HardskillComponent } from './components/hardskill/hardskill.component';
 import { LogroComponent } from './components/logro/logro.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'intro',  component: IntroComponent },
   { path: 'experience', component: ExperienceComponent },
@@ -26,10 +28,11 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent, },
   { path: 'user', component: BoardUserComponent,},
   { path: 'info', component: FooterComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'logro', component: LogroComponent},
   { path: 'mod', component: BoardUserComponent },
   { path: 'admin', component: BoardAdminComponent },
-  { path: '', redirectTo: 'login', pathMatch: 'full'}
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
