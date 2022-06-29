@@ -8,13 +8,13 @@ const USER_KEY = 'auth-user';
   providedIn: 'root'
 })
 export class TokenStorageService {
-  
+  roles: Array<string> = [];  
 
   constructor(private router: Router) { }
 
   signOut(): void {
     window.sessionStorage.clear();
-    this.router.navigate(['/login']);
+    this.router.navigate(['/']);
   }
 
   public saveToken(token: string): void {

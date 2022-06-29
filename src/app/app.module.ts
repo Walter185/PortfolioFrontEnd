@@ -24,7 +24,6 @@ import { EducationComponent } from './components/education/education.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SkillComponent } from './components/skill/skill.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { AuthService } from './_services/auth.service';
 import { IntroComponent } from './components/intro/intro.component';
 import { HardskillComponent } from './components/hardskill/hardskill.component';
 import { LogroComponent } from './components/logro/logro.component';

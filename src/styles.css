@@ -141,10 +141,6 @@ body {
   display: flex;
 }
 
-#btnlog {
-  margin-top: 10px;
-}
-
 #regis {
   margin-top: 10px;
 }
@@ -166,23 +162,11 @@ body {
   display: flex;
 }
 
-.barcontainer {
-  display: flex;
-  justify-content: space-between;
-}
 
-.navitem {
-  margin-right: 20px;
-}
-
-
-.navbar-brand {
-  font-weight: 400;
-  text-align: center;
-}
 
 #logout {
-  margin-left: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 img {
@@ -190,15 +174,15 @@ img {
 }
 .navbar {
   width: 100%;
-  position: fixed !important;
+  position: sticky !important;
   background-color: rgb(27, 27, 27);
   opacity: 95%;
   font-style: white;
   overflow: hidden;
+  flex-direction: initial;
   text-align: left;
   left: 0;
   top: 0;
-  z-index: 1;
   align-items: center;
   box-shadow: 0 0 6px 0 rgb(0 0 0 / 20%);
 }
@@ -546,9 +530,9 @@ img {
     margin-top: -15px;
   }
   #menu , #menu2{
-    display: flex;
-    width: 200px;
-    margin-left: -50px !important;
+    display: grid;
+    width: 100px;
+    margin-left: auto;
   }
   #login2{
     margin-left: 10px !important;
