@@ -20,7 +20,7 @@ section {
   border-color: #000;
   border-style: 2px solid;
   width: 100%;
-  padding: 2px;
+  padding: 5px;
 }
 
 li {
@@ -33,7 +33,7 @@ li {
 }
 
 body {
-  background-color: #30302e;
+  background-color: rgb(27, 27, 27);
   min-height: 110vh;
   margin: 0;
 }
@@ -147,28 +147,46 @@ body {
 
 
 
-#login , #register{
-  width: 100%;  
-  height: 100%;
+#register2{
+  width: 85%;
+  height: 500px;
+  display: flex;
+
+}
+#login2{
+  width: 85%;
+  height: 500px;
+  display: flex;
+}
+#id{
+  display: flex;
+}
+
+#init{
   position: fixed;
-  text-align: left;
-  margin-top: 25px;
-  margin-left: -50px;
-    
-}
-#login2, register2{
-  width: 300px;
-  height: 600px;
   display: flex;
 }
-
-
-
-#logout {
-  display: flex;
-  flex-direction: row;
+#init img{
+  width: auto;
+  margin-left: -10px;
+  margin-top: -15px;
 }
-
+#welcome, #welcome2{
+  position: absolute;
+ margin-left: 40px;
+ margin-top: 50px;
+ font-family: serif;
+ font-size: 3em;
+ text-align: left;
+  color: #fff;
+  text-shadow: #000 2px 2px;
+}
+#cv{
+margin-top: 110px;
+margin-left:40px;
+position: absolute;
+box-shadow: #000 2px 2px;
+}
 img {
   width: 19px;
 }
@@ -179,18 +197,21 @@ img {
   opacity: 95%;
   font-style: white;
   overflow: hidden;
-  flex-direction: initial;
   text-align: left;
   left: 0;
   top: 0;
+  margin-top: -5px;
   align-items: center;
   box-shadow: 0 0 6px 0 rgb(0 0 0 / 20%);
 }
-
-
-#cv {
-  display: contents;
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  margin-inline-start: 10px;
 }
+
+
 
 #curso {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -225,6 +246,7 @@ img {
   display: flex;
   width: 100%;
   height: auto;
+  margin: 5px;
 }
 
 /* =============== Main =========== */
@@ -237,7 +259,7 @@ img {
 }
 
 #main{
-  margin-top: 70px;
+  margin-top: -10px;
   width: 100%;
 }
 
@@ -247,7 +269,9 @@ img {
 
   justify-content: space-between;
 }
-
+#redes{
+ margin-top: 10px;
+}
 
 #profile-pfp {
   border-radius: 50% 50%;
@@ -303,10 +327,10 @@ img {
   text-align: center;
   align-items: left;
   padding: 2.5em;
-  
+  margin: 10px;
 }
 #intros{
-  margin-left: 20px;
+  margin-left: 5px;
   margin-right: 40px !important;
   line-break: anywhere;
 }
@@ -316,11 +340,11 @@ img {
 
 #experience {
   padding: 3rem;
-  margin: 20px;
+  margin: 5px;
 }
 #logro{
   padding: 3rem;
-  margin: 20px;
+  margin: 5px;
 }
 #logros{
   background-color: #bebebe;
@@ -335,7 +359,7 @@ img {
 
 #education {
   padding: 3rem;
-  margin: 20px;
+  margin: 5px;
 }
 
 
@@ -397,7 +421,7 @@ img {
 
 #softskill , #hardskill {
   padding: 3rem;
-  margin: 20px;
+  margin: 5px;
 
 }
 
@@ -411,7 +435,7 @@ img {
 
 #project{
   padding: 3rem;
-  margin: 20px;
+  margin: 5px;
   width: 100%;
 }
 #project img{
@@ -471,9 +495,7 @@ img {
   #info-data {
     display: flex;
   }
-  #register2{
-    width: 250px;
-  }
+
 
 }
 
@@ -505,15 +527,8 @@ img {
   #logointi {
     display: none;
   }
-  #login2{
-    margin-left: 0px !important;
-    box-shadow: rgb(59, 59, 59) 7px 7px !important;
-  }
-  #register2{
-    margin-left: -10px !important;
-    width: 230px;
 
-  }
+
 }
 
 @media (max-width: 411px) {
@@ -530,39 +545,22 @@ img {
     margin-top: -15px;
   }
   #menu , #menu2{
-    display: grid;
+  display: flex;
     width: 100px;
     margin-left: auto;
   }
-  #login2{
-    margin-left: 10px !important;
-    width: 300px;
-  }
-   #register2{
-    margin-left: -50px !important;
-    width: 250px;
-}}
+
+}
 
 @media (max-width: 470px) {
-  #register2{
-    margin-left: 70px;
-    width: 250px;
-  }
+
 }
 @media (max-width: 570px) {
-  #login2{
-    margin-left: 70px !important;
-  }
-  #register2{
-    margin-left: 80px !important;
-}}
+
+}
 @media (max-width: 625px) {
-  #login2{
-    margin-left: 70px !important;
-  }
-  #register2{
-    margin-left: 100px !important;
-}}
+
+}
 @media (max-width: 790px) {
 
   #info-data {
@@ -575,13 +573,8 @@ img {
     margin-top: -5px;
     border-radius: 5%;
   }
-  #login2{
-    margin-left: 230px;
-  }
- #register2{
-    margin-left: 220px;
-  }
 }
+
 
 @media (max-width: 980px) {
   #info-details {
@@ -591,10 +584,6 @@ img {
   #logointi {
     display: none;
   }
-
-
-  
-  
 
 
   #link1,
@@ -608,7 +597,7 @@ img {
 
 
   .redes2 img {
-    display: inline-block;
+    display: inline-blflock;
 
   }
 
@@ -630,7 +619,7 @@ img {
   }
 
   .profile-details {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .pd-row div img {
@@ -661,7 +650,6 @@ body {
 
 
 body {
-  margin: 0;
-
+  margin: 20px;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }}
