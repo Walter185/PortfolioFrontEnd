@@ -1,16 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { TokenStorageService } from './_services/token-storage.service';
+import { TokenStorageService } from 'src/app/_services/token-storage.service';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-menu',
+  templateUrl: './menu.component.html',
+  styleUrls: ['./menu.component.css']
 })
-export class AppComponent implements OnInit {
+export class MenuComponent implements OnInit {
   private roles: string[];
   isLoggedIn = false;
   showAdminBoard = false;
+  ShowUserBoard = false;
+  ShowHome = false;
   showModeratorBoard = false;
-  username?: string;
+  username: string;
 
   constructor(private tokenStorageService: TokenStorageService) { }
 
@@ -31,7 +34,7 @@ export class AppComponent implements OnInit {
 
   logout(): void {
     this.tokenStorageService.signOut();
-    window.location.reload();
+    //window.location.reload();
   }
   
 }
