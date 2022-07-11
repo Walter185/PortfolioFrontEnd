@@ -8,7 +8,7 @@ import { Persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  private apiServeUrl='https://dbliendo.herokuapp.com';
+  private apiServeUrl='http://localhost:8080';
 
   constructor(private http:HttpClient) { }
 

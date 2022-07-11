@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.annotations.ApiIgnore;
 
 @RestController
-@CrossOrigin(origins = "https://frontendliendo.web.app")
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/persona")
 public class PersonaController {
     private final PersonaService personaService;
