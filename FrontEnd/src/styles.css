@@ -226,6 +226,7 @@ img {
   color: rgb(171, 167, 167);
   margin-top: -15px;
 }
+
 .data-container{
   align-items: center;
 }
@@ -327,12 +328,16 @@ img {
   text-align: center;
   align-items: left;
   padding: 2.5em;
-  margin: 10px;
+  margin: 5px;
+}
+
+#int{
+margin: auto;
+
 }
 #intros{
-  margin-left: 5px;
-  margin-right: 40px !important;
   line-break: anywhere;
+  margin: auto;
 }
 
 
@@ -491,11 +496,10 @@ img {
   transform: scale(1.2);
 }
 
-@media (max-width: 279px) {
+@media (max-width: 250px) {
   #info-data {
     display: flex;
   }
-
 
 }
 
@@ -505,6 +509,9 @@ img {
   .pd-right button:nth-child(1),
   .pd-right button:nth-child(2) {
     display: none;
+  }
+  #logoAP {
+  display: none;
   }
   
   .redes img {
