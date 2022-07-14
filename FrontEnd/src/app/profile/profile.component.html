@@ -1,11 +1,11 @@
 
 <div class="row" *ngIf="currentUser; else loggedOut" id="profile">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="col-md-12" style="height: 100%; width: 100%" id="rol">
       
-        <br><br><br><br>
+        <br><br><br>
       <h3 mat-card-title>Nombre de Usuario:   <strong><u>{{ currentUser.username }}</u></strong></h3>
     </div>
-      <div class="row" id="profile2" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="row" id="profile2" class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
     <p>
       <strong>Token: </strong>{{currentUser.accessToken.substring(0,20)}}...
       {{currentUser.accessToken.substr(currentUser.accessToken.length - 20) }}
