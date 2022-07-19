@@ -9,12 +9,14 @@ import { TokenStorageService } from '../_services/token-storage.service';
 export class IndexComponent implements OnInit {
  
   nombreUsuario: string;
+  currentUser: any;
 
 
   constructor(private tokenStorageService:TokenStorageService) { }
   
   ngOnInit() {
     this.nombreUsuario = this.tokenStorageService.getUserName();
+    this.currentUser = this.tokenStorageService.getUser();
   }
 
 }

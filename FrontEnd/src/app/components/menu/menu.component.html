@@ -37,19 +37,18 @@
       </div>
       <ul class="navbar-nav mr-auto" routerLinkActive="active">
         <li class="nav-item" *ngIf="ShowUserBoard">
-          <a href="/user" class="nav-link" routerLink="user" style="color: rgb(171, 167, 167);">Inicio /</a>
+          <a href="/user" class="nav-link" routerLink="user" style="color: rgb(171, 167, 167);">Inicio</a>
         </li>
         <li class="nav-item" *ngIf="showAdminBoard">
-          <a href="/admin" class="nav-link" routerLink="admin">Admin /</a>
+          <a href="/admin" class="nav-link" routerLink="admin">Administrador</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
         <li class="nav-item">
-          <a href="/" class="nav-link" routerLink="/" style="color: rgb(171, 167, 167);"> Home /</a>
+          <a href="/" class="nav-link" routerLink="/" style="color: rgb(171, 167, 167);">Home</a>
         </li>
         <li class="nav-item">
-          <a href="/register" class="nav-link" routerLink="register" style="color: rgb(171, 167, 167)"> Registrarse
-            /</a>
+          <a href="/register" class="nav-link" routerLink="register" style="color: rgb(171, 167, 167)">Registrarse</a>
         </li>
         <li class="nav-item">
           <a href="/login" class="nav-link" routerLink="login" style="color: rgb(171, 167, 167);">Login</a>
@@ -57,11 +56,7 @@
       </ul>
       <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
         <li class="nav-item">
-          <a href="/user" class="nav-link" routerLink="user" style="color: rgb(171, 167, 167);">Inicio /</a>
-        </li>
-        <li class="nav-item">
-          <a href="/profile" class="nav-link" routerLink="profile" style="color: rgb(171, 167, 167);">{{ username }}
-            /</a>
+          <a href="/user" class="nav-link" routerLink="user" style="color: rgb(171, 167, 167);">Inicio</a>
         </li>
         <li class="nav-item">
           <a href class="nav-link" (click)="logout()" style="color: rgb(171, 167, 167);">LogOut</a>
