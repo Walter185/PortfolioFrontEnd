@@ -11,6 +11,9 @@
   padding: 0;
   scroll-behavior: smooth;
 }
+.card{
+  background-color: #fffffff2;
+}
 
 .carousel-inner{
   display: flex;
@@ -29,8 +32,8 @@ section {
 
 li {
   list-style: none;
-
 }
+
 
 #bold {
   font-size: small;
@@ -40,6 +43,7 @@ body {
   background-color: rgb(27, 27, 27);
   min-height: 110vh;
   margin: 0;
+  overflow: auto;
 }
 
 .mat-card {
@@ -47,7 +51,7 @@ body {
   margin: 1px 1px;
   padding: 3px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 0px;
   position: relative;
   float: left;
 }
@@ -71,7 +75,7 @@ body {
 #inicio{
   background-color: transparent;
   width: 100%;
-  height: 70%;
+  margin-top: -15px;
 }
 .section-title {
   position: relative;
@@ -157,12 +161,10 @@ body {
   margin-top: 10px;
 }
 
-.navbar-nav .nav-link {
-  padding-right: 2px;
-  padding-left: 2px;
+#register{
+  margin-top: -24px;
+
 }
-
-
 #register2{
   width: 85%;
   height: 500px;
@@ -175,7 +177,9 @@ body {
   display: flex;
 }
 
-
+#loginback{
+  margin-top: -24px;
+}
 #id{
   display: flex;
 }
@@ -198,7 +202,7 @@ img {
 }
 .navbar {
   width: 100%;
-  position: sticky !important;
+  position: fixed;
   background-color: rgb(27, 27, 27);
   opacity: 95%;
   font-style: white;
@@ -216,7 +220,10 @@ img {
   margin-inline-start: 10px;
 }
 
-
+.nav-link {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
 
 #curso {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -252,7 +259,7 @@ img {
   display: flex;
   width: 100%;
   height: auto;
-  margin: 5px;
+  margin: 10px;
 }
 
 /* =============== Main =========== */
@@ -500,6 +507,22 @@ margin: auto;
 .project .content .card .card-img img:hover {
   transform: scale(1.2);
 }
+section {
+  padding: 80px 20px;
+}
+
+
+html,
+body {
+height: 90%;
+}
+
+
+body {
+margin: 20px;
+font-family: Roboto, "Helvetica Neue", sans-serif;
+background-color: rgb(78, 78, 78) !important;
+}
 
 @media (max-width: 250px) {
   #info-data {
@@ -586,12 +609,10 @@ margin: auto;
   #info-details {
     display: none;
   }
-
-
+ 
   #curso {
     display: none;
   }
-
 
   .profile-details {
     flex-direction: row;
@@ -604,11 +625,6 @@ margin: auto;
 }
 
 @media (max-width: 1320px) {
-  section {
-    padding: 80px 20px;
-  }
-
-
   #link1,
   #link2,
   #link3,
@@ -617,14 +633,4 @@ margin: auto;
   #link6 {
     display: none;
   }
-
-html,
-body {
-  height: 100%;
 }
-
-
-body {
-  margin: 20px;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}}

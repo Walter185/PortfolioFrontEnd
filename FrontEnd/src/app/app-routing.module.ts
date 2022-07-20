@@ -17,6 +17,7 @@ import { LoginGuard } from '../app/guards/login.guard';
 import { GuardService } from '../app/guards/guard.service';
 const routes: Routes = [
   { path: '', component: IndexComponent },
+  { path: 'index', component: IndexComponent },
   { path: 'login', component: LoginComponent, canActivate: [LoginGuard] },
   { path: 'intro',  component: IntroComponent, canActivate: [GuardService] },
   { path: 'experience', component: ExperienceComponent, canActivate: [GuardService] },
