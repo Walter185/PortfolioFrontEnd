@@ -18,7 +18,7 @@ import springfox.documentation.annotations.ApiIgnore;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontendliendo.web.app")
 @RequestMapping("/educacion")
 public class EducacionController {
     private final EducacionService educacionService;

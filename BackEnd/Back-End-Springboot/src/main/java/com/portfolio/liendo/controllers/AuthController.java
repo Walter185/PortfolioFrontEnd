@@ -34,7 +34,7 @@ import com.portfolio.liendo.security.services.UserDetailsImpl;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontendliendo.web.app")
 @RequestMapping("/api/auth")
 public class AuthController {
   @Autowired
