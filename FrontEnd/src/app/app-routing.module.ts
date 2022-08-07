@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { BoardUserComponent } from './board-user/board-user.component';
-import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
@@ -15,6 +14,7 @@ import { LogroComponent } from './components/logro/logro.component';
 import { IndexComponent } from './index/index.component';
 import { LoginGuard } from '../app/guards/login.guard';
 import { GuardService } from '../app/guards/guard.service';
+
 const routes: Routes = [
   { path: '', component: IndexComponent },
   { path: 'index', component: IndexComponent },
@@ -26,10 +26,9 @@ const routes: Routes = [
   { path: 'Skills', component: SkillComponent , canActivate: [GuardService] },
   { path: 'hard', component: HardskillComponent, canActivate: [GuardService] },
   { path: 'proyectos', component: ProjectComponent, canActivate: [GuardService] },
-  { path: 'user', component: BoardUserComponent, canActivate: [GuardService] },
+  { path: 'home', component: BoardUserComponent, canActivate: [GuardService] },
   { path: 'info', component: FooterComponent , canActivate: [GuardService] },
   { path: 'logro', component: LogroComponent, canActivate: [GuardService] },
-  { path: 'admin', component: BoardAdminComponent, canActivate: [GuardService] },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

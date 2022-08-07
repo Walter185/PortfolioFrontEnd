@@ -37,14 +37,12 @@
       </div>
       <ul class="navbar-nav mr-auto" routerLinkActive="active">
         <li class="nav-item" *ngIf="ShowUserBoard">
-          <a href="/user" class="nav-link" routerLink="user" style="color: rgb(171, 167, 167);">Inicio</a>
+          <a href="/home" class="nav-link" routerLink="home" style="color: rgb(171, 167, 167);">Inicio</a>
         </li>
   
       </ul>
       <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
-        <li class="nav-item">
-          <a href="/" class="nav-link" routerLink="/" style="color: rgb(171, 167, 167);">Home</a>
-        </li>
+ 
         <li class="nav-item">
           <a href="/register" class="nav-link" routerLink="register" style="color: rgb(171, 167, 167)">Registrarse</a>
         </li>
@@ -54,7 +52,7 @@
       </ul>
       <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
         <li class="nav-item">
-          <a href="/user" class="nav-link" routerLink="user" style="color: rgb(171, 167, 167);">Inicio</a>
+          <a href="/home" class="nav-link" routerLink="home" style="color: rgb(171, 167, 167);">Inicio</a>
         </li>
         <li class="nav-item">
           <a href="/" class="nav-link" routerLink="index" style="color: rgb(171, 167, 167);">Profile</a>
