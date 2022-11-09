@@ -39,10 +39,10 @@
         <li class="nav-item">
           <a href="/home" class="nav-link" routerLink="home" style="color: rgb(171, 167, 167);">Inicio</a>
         </li>
-  
+
       </ul>
       <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
- 
+
         <li class="nav-item">
           <a href="/register" class="nav-link" routerLink="register" style="color: rgb(171, 167, 167)">Registrarse</a>
         </li>
@@ -51,9 +51,6 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
-        <li class="nav-item">
-          <a href="/home" class="nav-link" routerLink="home" style="color: rgb(171, 167, 167);">Inicio</a>
-        </li>
         <li class="nav-item">
           <a href="/" class="nav-link" routerLink="index" style="color: rgb(171, 167, 167);">Profile</a>
         </li>
