@@ -4,9 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
 import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -19,7 +17,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.portfolio.liendo.models.ERole;
 import com.portfolio.liendo.models.Role;
 import com.portfolio.liendo.models.User;
@@ -34,7 +31,7 @@ import com.portfolio.liendo.security.services.UserDetailsImpl;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"https://frontendliendo.web.app","http://localhost:4200"})
 @RequestMapping("/api/auth")
 public class AuthController {
   @Autowired
