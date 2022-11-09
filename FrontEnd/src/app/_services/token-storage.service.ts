@@ -8,7 +8,7 @@ const USER_KEY = 'auth-user';
   providedIn: 'root'
 })
 export class TokenStorageService {
-  roles: Array<string> = [];  
+  roles: Array<string> = [];
 
   constructor(private router: Router) { }
 
@@ -34,7 +34,7 @@ export class TokenStorageService {
   public getUser(): any {
     return JSON.parse(sessionStorage.getItem(USER_KEY));
   }
-  
+
   public getUserName(): string {
     if (!this.isLogged()) {
       return null;

@@ -6,21 +6,22 @@ import { Hardskill } from '../model/hardskill.model';
   providedIn: 'root'
 })
 export class HardskillService {
-  private apiServeUrl='http://localhost:8080';
+  // private apiServeUrl='http://localhost:8080';
+  private apiServeUrl = 'https://dbliendo.herokuapp.com';
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  public getHardskill():Observable<Hardskill[]>{
+  public getHardskill(): Observable<Hardskill[]> {
     return this.http.get<Hardskill[]>(`${this.apiServeUrl}/hardskills/all`);
   }
-  
-  public addHardskill(hardskill: Hardskill): Observable<Hardskill>{
-    return this.http.post<Hardskill>(`${this.apiServeUrl}/hardskills/add`,hardskill);
+
+  public addHardskill(hardskill: Hardskill): Observable<Hardskill> {
+    return this.http.post<Hardskill>(`${this.apiServeUrl}/hardskills/add`, hardskill);
   }
-  public updateHardskill(hardskill: Hardskill): Observable<Hardskill>{
-    return this.http.put<Hardskill>(`${this.apiServeUrl}/hardskills/update`,hardskill);
+  public updateHardskill(hardskill: Hardskill): Observable<Hardskill> {
+    return this.http.put<Hardskill>(`${this.apiServeUrl}/hardskills/update`, hardskill);
   }
-  public deleteHardskill(hardskillId: number): Observable<void>{
+  public deleteHardskill(hardskillId: number): Observable<void> {
     return this.http.delete<void>(`${this.apiServeUrl}/hardskills/delete/${hardskillId}`);
-  } 
   }
+}

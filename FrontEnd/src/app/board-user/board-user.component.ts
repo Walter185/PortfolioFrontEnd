@@ -23,9 +23,9 @@ export class BoardUserComponent implements OnInit {
       }
     );
   }
- logout(){
-   localStorage.removeItem('token');
-   this.router.navigate(['']);
- }
+  logout() {
+    localStorage.removeItem('token');
+    this.router.navigate(['']);
+  }
 
 }

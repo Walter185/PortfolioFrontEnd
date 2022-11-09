@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  private apiServeUrl='http://localhost:8080';
+  // private apiServeUrl='http://localhost:8080';
+  private apiServeUrl = 'https://dbliendo.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 
@@ -21,6 +22,5 @@ export class UserService {
     return this.http.get(`${this.apiServeUrl}/api/test/admin`, { responseType: 'text' });
   }
 
-  }
+}
 
-  

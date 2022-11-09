@@ -12,19 +12,20 @@ const httpOptions = {
 })
 export class AuthService {
 
-  private apiServeUrl='http://localhost:8080';
+  // private apiServeUrl='http://localhost:8080';
+  private apiServeUrl = 'https://dbliendo.herokuapp.com';
   public redirectUrl: string;
   router: any;
   loggedIn$ = new BehaviorSubject(false);
 
   constructor(private http: HttpClient) {
-    if(this.hasToken()){
+    if (this.hasToken()) {
       this.setLoggedIn(true);
     } else {
       this.setLoggedIn(false);
-      
-    } 
-   }
+
+    }
+  }
 
   login(credentials): Observable<any> {
     return this.http.post(`${this.apiServeUrl}/api/auth/signin`, {
@@ -41,14 +42,14 @@ export class AuthService {
     }, httpOptions);
   }
 
-  hasToken(): boolean{
-    if (localStorage.getItem('token')){
+  hasToken(): boolean {
+    if (localStorage.getItem('token')) {
       return true;
     } else {
       return false;
     }
   }
-  setLoggedIn(value: boolean){
+  setLoggedIn(value: boolean) {
     this.loggedIn$.next(value);
   }
 }

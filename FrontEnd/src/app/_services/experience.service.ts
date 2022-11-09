@@ -7,21 +7,21 @@ import { Experience } from '../model/experience.model';
   providedIn: 'root'
 })
 export class ExperienceService {
-  private apiServeUrl='http://localhost:8080';
+  // private apiServeUrl='http://localhost:8080';
+  private apiServeUrl = 'https://dbliendo.herokuapp.com';
+  constructor(private http: HttpClient) { }
 
-  constructor(private http:HttpClient) { }
+  public getExperience(): Observable<Experience[]> {
+    return this.http.get<Experience[]>(`${this.apiServeUrl}/experiencia/all`);
+  }
 
-public getExperience():Observable<Experience[]>{
-  return this.http.get<Experience[]>(`${this.apiServeUrl}/experiencia/all`);
-}
-
-public addExperience(experience: Experience): Observable<Experience>{
-  return this.http.post<Experience>(`${this.apiServeUrl}/experiencia/add`,experience);
-}
-public updateExperience(experience: Experience): Observable<Experience>{
-  return this.http.put<Experience>(`${this.apiServeUrl}/experiencia/update`,experience);
-}
-public deleteExperience(experienceId: number): Observable<void>{
-  return this.http.delete<void>(`${this.apiServeUrl}/experiencia/delete/${experienceId}`);
-} 
+  public addExperience(experience: Experience): Observable<Experience> {
+    return this.http.post<Experience>(`${this.apiServeUrl}/experiencia/add`, experience);
+  }
+  public updateExperience(experience: Experience): Observable<Experience> {
+    return this.http.put<Experience>(`${this.apiServeUrl}/experiencia/update`, experience);
+  }
+  public deleteExperience(experienceId: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiServeUrl}/experiencia/delete/${experienceId}`);
+  }
 }

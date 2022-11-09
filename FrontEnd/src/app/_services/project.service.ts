@@ -7,21 +7,21 @@ import { Project } from '../model/project.model';
   providedIn: 'root'
 })
 export class ProjectService {
-  private apiServeUrl='http://localhost:8080';
-  
-  constructor(private http:HttpClient) { }
+  // private apiServeUrl='http://localhost:8080';
+  private apiServeUrl = 'https://dbliendo.herokuapp.com';
 
-public getProject():Observable<Project[]>{
-  return this.http.get<Project[]>(`${this.apiServeUrl}/proyectos/all`);
-}
+  constructor(private http: HttpClient) { }
 
-public addProject(project: Project): Observable<Project>{
-  return this.http.post<Project>(`${this.apiServeUrl}/proyectos/add`,project);
-}
-public updateProject(project: Project): Observable<Project>{
-  return this.http.put<Project>(`${this.apiServeUrl}/proyectos/update`,project);
-}
-public deleteProject(projectId: number): Observable<void>{
-  return this.http.delete<void>(`${this.apiServeUrl}/proyectos/delete/${projectId}`);
-} 
+  public getProject(): Observable<Project[]> {
+    return this.http.get<Project[]>(`${this.apiServeUrl}/proyectos/all`);
+  }
+  public addProject(project: Project): Observable<Project> {
+    return this.http.post<Project>(`${this.apiServeUrl}/proyectos/add`, project);
+  }
+  public updateProject(project: Project): Observable<Project> {
+    return this.http.put<Project>(`${this.apiServeUrl}/proyectos/update`, project);
+  }
+  public deleteProject(projectId: number): Observable<void> {
+    return this.http.delete<void>(`${this.apiServeUrl}/proyectos/delete/${projectId}`);
+  }
 }

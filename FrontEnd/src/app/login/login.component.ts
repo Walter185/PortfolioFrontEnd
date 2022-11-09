@@ -19,14 +19,14 @@ export class LoginComponent implements OnInit {
 
 
 
-  constructor(private authService: AuthService, private tokenStorage: TokenStorageService, private router:Router) { }
+  constructor(private authService: AuthService, private tokenStorage: TokenStorageService, private router: Router) { }
 
 
   gotToRegister(): void {
-    const navigationDetails:String[]=['/register'];
-  this.router.navigate(navigationDetails);
+    const navigationDetails: String[] = ['/register'];
+    this.router.navigate(navigationDetails);
   }
-  
+
   ngOnInit(): void {
     if (this.tokenStorage.getToken()) {
       this.isLoggedIn = true;
@@ -51,13 +51,13 @@ export class LoginComponent implements OnInit {
       }
     );
   }
-    
+
   reloadPage(): void {
     window.location.reload();
   }
 
-  loginUser(){
-    localStorage.setItem('token','my_token');
+  loginUser() {
+    localStorage.setItem('token', 'my_token');
     this.router.navigate(['user']);
 
   }
