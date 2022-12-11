@@ -12,8 +12,8 @@ const httpOptions = {
 })
 export class AuthService {
 
-  // private apiServeUrl='http://localhost:8080';
-  private apiServeUrl = 'https://dbliendo.herokuapp.com';
+  private apiServeUrl='http://localhost:8080';
+  //private apiServeUrl = 'https://dbliendo.herokuapp.com';
   public redirectUrl: string;
   router: any;
   loggedIn$ = new BehaviorSubject(false);

@@ -7,8 +7,8 @@ import { Logro } from '../model/logro.model';
   providedIn: 'root'
 })
 export class LogroService {
-  // private apiServeUrl='http://localhost:8080';
-  private apiServeUrl = 'https://dbliendo.herokuapp.com';
+  private apiServeUrl='http://localhost:8080';
+  //private apiServeUrl = 'https://dbliendo.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 
