@@ -1,5 +1,9 @@
 <div *ngIf="persona" class="card mat-card" id="main" main-container>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="viewport">
+    <video class="block I23793"
+      src="https://liendo.s3.sa-east-1.amazonaws.com/Pel%C3%ADculas+y+TV+2022-07-19+23-13-37_Trim.mp4" alt="Walter Liendo Developer" autoplay playsinline loop [muted]="true"></video>
+  </div>
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -24,7 +28,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
+  </div> -->
     <div id="info" style="padding:16px">
       <div class="img-about mb-3" id="profile-pfpEdit">
           <img src="{{persona.img}}" title="Walter Liendo" id="profile-pfp" data-toggle="tooltip"

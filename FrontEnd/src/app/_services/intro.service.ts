@@ -7,8 +7,8 @@ import { Intro } from '../model/intro.model';
   providedIn: 'root'
 })
 export class IntroService {
-  private apiServeUrl='http://localhost:8080';
-  //private apiServeUrl = 'https://dbliendo.herokuapp.com';
+  //private apiServeUrl='http://localhost:8080';
+  private apiServeUrl = 'https://dbliendo.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 

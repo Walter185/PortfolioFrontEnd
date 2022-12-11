@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-  private apiServeUrl='http://localhost:8080';
-  //private apiServeUrl = 'https://dbliendo.herokuapp.com';
+  //private apiServeUrl='http://localhost:8080';
+  private apiServeUrl = 'https://dbliendo.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 

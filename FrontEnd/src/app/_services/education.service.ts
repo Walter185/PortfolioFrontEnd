@@ -8,8 +8,8 @@ import { Education } from '../model/education.model';
   providedIn: 'root'
 })
 export class EducationService {
-  private apiServeUrl='http://localhost:8080';
-  //private apiServeUrl = 'https://dbliendo.herokuapp.com';
+  //private apiServeUrl='http://localhost:8080';
+  private apiServeUrl = 'https://dbliendo.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 
