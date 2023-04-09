@@ -9,7 +9,7 @@ import { Softskill } from '../model/softskill.model';
 export class SoftskillService {
   //private apiServeUrl='http://localhost:8080';
   //private apiServeUrl = 'https://dbliendo.herokuapp.com';
-  private apiServeUrl = 'https://portfoliobackend-9kev.onrender.com';
+  private apiServeUrl = 'https://portfolioliendo.onrender.com';
 
   constructor(private http: HttpClient) { }
 

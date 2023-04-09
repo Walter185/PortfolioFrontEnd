@@ -14,7 +14,7 @@ export class AuthService {
 
   //private apiServeUrl='http://localhost:8080';
   //private apiServeUrl = 'https://dbliendo.herokuapp.com';
-  private apiServeUrl = 'https://portfoliobackend-9kev.onrender.com';
+  private apiServeUrl = 'https://portfolioliendo.onrender.com';
   public redirectUrl: string;
   router: any;
   loggedIn$ = new BehaviorSubject(false);

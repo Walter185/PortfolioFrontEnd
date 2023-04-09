@@ -9,7 +9,7 @@ import { Experience } from '../model/experience.model';
 export class ExperienceService {
   //private apiServeUrl='http://localhost:8080';
   //private apiServeUrl = 'https://dbliendo.herokuapp.com';
-  private apiServeUrl = 'https://portfoliobackend-9kev.onrender.com';
+  private apiServeUrl = 'https://portfolioliendo.onrender.com';
   constructor(private http: HttpClient) { }
 
   public getExperience(): Observable<Experience[]> {
