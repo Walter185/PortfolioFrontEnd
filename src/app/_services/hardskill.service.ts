@@ -8,7 +8,7 @@ import { Hardskill } from '../model/hardskill.model';
 export class HardskillService {
   //private apiServeUrl='http://localhost:8080';
   //private apiServeUrl = 'https://dbliendo.herokuapp.com';
-  private apiServeUrl = 'https://portfolioliendo.onrender.com';
+  private apiServeUrl = 'https://portfolioliendo-zx4v.onrender.com';
 
   constructor(private http: HttpClient) { }
 
